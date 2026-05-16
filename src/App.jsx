@@ -8,6 +8,7 @@ import Home from './pages/Home'
 import Dynamic from './pages/Dynamic'
 import Product from './pages/Product'
 import Cart from './pages/Cart'
+import NotFound from './pages/NotFound'
 
 export default function App() {
 
@@ -39,6 +40,10 @@ export default function App() {
         {
           path: "/products/:id",
           element: <Dynamic />
+        },
+        {
+          path: "*",
+          element: <NotFound />
         }
       ]
     }
